@@ -3,8 +3,11 @@
     top: 0;
     z-index: 9999;
     background: #fff;
+    width: 100%;
     padding: 20px;
 }
+
+
 
 .header .inner {
     display: flex;
@@ -22,4 +25,59 @@
 .header .gnb>ul {
     display: flex;
     gap: 30px;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header .snb>ul {
+    display: flex;
+    gap: 30px;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header .snb .red {
+    color: #b70f28;
+}
+
+
+.header .util_box .tophead ul {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+
+    font-size: 14px;
+    color: #999;
+}
+
+.header .util_box .tophead ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 65px;
+    transform: translate(0, -40%);
+
+    width: 1px;
+    height: 12px;
+    background: #999;
+}
+
+.header .inner .util_box {
+    position: relative;
+    display: inline-block;
+    width: 230px;
+    height: 48px;
+    border: 1px solid #b70f28;
+    border-radius: 4px 16px 4px 16px;
+}
+
+.header .inner .util_box figure {
+    position: absolute;
+    top: 12px;
+    left: 10px;
 }
