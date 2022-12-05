@@ -102,3 +102,61 @@
     top: 12px;
     left: 10px;
 }
+
+.header .util_box p {
+    position: absolute;
+    top: 14px;
+    left: 40px;
+    color: #999;
+}
+
+.mainVisual {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.mainVisual .mainSlide {
+    position: relative;
+    height: 400px;
+    padding: 100px 0;
+}
+
+.mainSlide .slick-dots {
+    position: absolute;
+    top: 125px;
+    right: 40px;
+    z-index: 1;
+    width: 240px;
+    height: 350px;
+    padding: 50px 0;
+    border-radius: 0.8rem 3.6rem 0.8rem 3.6rem;
+    background: rgba(22, 23, 29, .45);
+}
+
+.mainSlide .slick-dots>li {
+    display: flex;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 0 50px 20px;
+    cursor: pointer;
+}
+
+.mainSlide .slick-dots>li:first-child:after {
+    position: absolute;
+    right: 30px;
+    content: "";
+    width: 3px;
+    height: 240px;
+    background-color: #333;
+}
+
+.mainVisual .main_num {
+    position: absolute;
+    bottom: -75px;
+    left: 105px;
+    background: rgba(22, 23, 29, .45);
+    padding: 10px 25px;
+    border-radius: 5rem;
+    color: #fff;
+}
