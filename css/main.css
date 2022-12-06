@@ -1,12 +1,12 @@
 .header {
-    width: 1260px;
+    width: 1220px;
     margin: 0 auto;
 }
 
 .header .inner {
     display: flex;
     justify-content: space-between;
-    width: 1260px;
+    width: 1220px;
     margin: 0 auto;
 }
 
@@ -104,13 +104,14 @@
     padding-left: 45px;
     outline: 0;
     border-radius: 4px 16px 4px 16px;
+    font-size: 14px;
 }
 
 
 
 .mainVisual {
     position: relative;
-    width: 1260px;
+    width: 1220px;
     margin: 0 auto;
 }
 
@@ -165,7 +166,7 @@
 .mainIcon {
     display: flex;
     justify-content: space-between;
-    width: 1260px;
+    width: 1220px;
     margin: 0 auto;
     padding: 80px 0;
 }
@@ -235,4 +236,74 @@
     font-size: 14px;
     font-weight: 500;
     padding: 20px 0;
+}
+
+
+
+.mainWrap {
+    height: 570px;
+    background: #f9f9f9;
+}
+
+.mainWrap .inner {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.mainWrap .inner h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    padding: 100px 0 50px 0;
+}
+
+.mainWrap .inner .txt_box {
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    border-bottom: 3px solid #333;
+    padding: 10px 0;
+}
+
+.mainWrap .inner .txt_box .car_input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding-left: 15px;
+    outline: 0;
+    background: #f9f9f9;
+}
+
+.mainWrap .inner .txt_box figure {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.mainWrap .inner .tag {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.mainWrap .inner .tag span {
+    font-size: 14px;
+    font-weight: 500;
+    background: #fff;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 20%;
+}
+
+.mainWrap .inner .select_box {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.mainWrap .inner select {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #f8f8f8;
+    font-family: 'Nanumgothic';
+    border-radius: 3px;
 }
