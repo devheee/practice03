@@ -33,15 +33,19 @@ $(function () {
     });
 
     $('.subSlide').slick({
+        slidesToShow: 3,
         dots: false,
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         pauseOnHover: false,
         pauseOnFocus: false,
     });
 
 
+    $('.subSlide').on('afterChange', function (e, s, c) {
+        $('.subVisual .sub_num').text(c + 1 + "/" + s.slideCount);
+    });
 
     $('.popup button').on('click', function () {
         $(this).parent().hide();

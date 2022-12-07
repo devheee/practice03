@@ -35,7 +35,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    right: -75%;
+    right: -60%;
     transform: translate(0, -45%);
 
     width: 1px;
@@ -297,13 +297,150 @@
 
 .mainWrap .inner .select_box {
     width: 1220px;
+    height: 190px;
+    border-radius: 0.8rem;
+    box-shadow: 0 2rem 3.2rem -0.8rem rgb(22 23 29 / 10%), 0 0 0.1rem 0 rgb(22 23 29 / 20%);
     margin: 0 auto;
+    background: #fff;
+    padding: 40px 80px;
 }
 
-.mainWrap .inner select {
+.mainWrap .select_box .check_txt {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+.mainWrap .select_box .check_txt span {
+    position: relative;
+    margin: 0 80px 0 0;
+}
+
+.mainWrap .select_box .check_txt span:first-child:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -0.2rem;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.8rem;
+    background: url(../img/icon-check-red.svg) no-repeat 50% 50%;
+    background-size: 20px;
+    vertical-align: middle;
+}
+
+.mainWrap .select_box .check_txt span:nth-child(-n+2):after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform: translate(0, -45%);
+
+    width: 1px;
+    height: 18px;
+    background: rgb(192, 192, 192);
+}
+
+
+.mainWrap .select_box select {
     width: 200px;
-    padding: 5px;
-    border: 1px solid #f8f8f8;
-    font-family: 'Nanumgothic';
-    border-radius: 3px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 12px 13px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    margin-left: 20px;
+}
+
+.mainWrap .select_box button {
+    margin: 0 20px;
+    border-style: none;
+    border: 0;
+    border-radius: 0.8rem;
+    width: 100px;
+    height: 50px;
+    background: #b70f28;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.mainWrap .select_box button:hover {
+    background: #dd2e48;
+}
+
+
+.subVisual {
+    width: 1260px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.subVisual h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    padding: 0 0 50px 0
+}
+
+.subSlide .itm_box .inner {
+    width: 380px;
+    height: 450px;
+}
+
+.subSlide .itm_box .inner img {
+    border-radius: 5%;
+}
+
+.subSlide .itm_box .pul {
+    padding: 20px 0;
+}
+
+.subSlide .itm_box .pul .model {
+    color: #000;
+    font-size: 24px;
+    margin: 10px 0 40px 0;
+}
+
+.subSlide .itm_box .pul .price {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.subSlide .itm_box .pul .des {
+    display: flex;
+    font-size: 14px;
+    color: #444
+}
+
+.subSlide .itm_box .pul .des li~li::before {
+    content: "·";
+    display: inline-block;
+    color: #999ea1;
+    margin: 0 5px;
+}
+
+.subSlide .itm_box .pul .flag {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 0 0;
+    font-size: 14px;
+    color: #444;
+
+}
+
+.subSlide .itm_box .pul .flag li {
+    background: #eeeded;
+    border: 3px solid #eeeded;
+    border-radius: 60px;
 }
