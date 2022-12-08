@@ -1,9 +1,5 @@
 $(function () {
 
-    $('.topBanner i').on('click', function () {
-        $('.topBanner').addClass('on')
-    })
-
     $('.mainSlide').slick({
         arrows: false,
         dots: true,
@@ -42,13 +38,26 @@ $(function () {
         autoplay: false,
         pauseOnHover: false,
         pauseOnFocus: false,
-        slidesToScroll: 3,
     });
 
-
+    var barwidth = $('.bar').width();
     $('.subSlide').on('afterChange', function (e, s, c) {
-        $('sub_num span').text(c ? (c + 1) : 1)
-        $('sub_num strong').text(s.slideCount)
+        var bb = barwidth / s.slideCount;
+        $('.bar span').css({ width: bb })
+        $('.bar span').css({ width: bb * (c + 1) })
+
+        $('.sub_num span').text("0" + (c + 1))
+        $('.sub_num strong').text(s.slideCount)
     });
+
+
+    $('.subTab .tab_menu>li').on('click', function (event) {
+        event.preventDefault();
+        var _this = $(this);
+        var idx = $(this).index();
+        $(this).addClass('on').siblings().removeClass('on');
+        $('.subTab .tab_content>li').eq(idx).addClass('on').siblings().removeClass('on')
+    })
+
 })
 

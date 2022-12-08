@@ -241,7 +241,7 @@
 
 
 .mainWrap {
-    height: 570px;
+    height: 600px;
     background: #f9f9f9;
 }
 
@@ -295,6 +295,7 @@
     border-radius: 20%;
 }
 
+
 .mainWrap .inner .select_box {
     width: 1220px;
     height: 190px;
@@ -317,7 +318,7 @@
     margin: 0 80px 0 0;
 }
 
-.mainWrap .select_box .check_txt span:first-child:before {
+.mainWrap .select_box .check_txt span:first-child::before {
     content: "";
     display: inline-block;
     position: relative;
@@ -330,7 +331,7 @@
     vertical-align: middle;
 }
 
-.mainWrap .select_box .check_txt span:nth-child(-n+2):after {
+.mainWrap .select_box .check_txt span:nth-child(-n+2)::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -342,6 +343,10 @@
     background: rgb(192, 192, 192);
 }
 
+
+.mainWrap .select_box .inner {
+    margin-left: 20px
+}
 
 .mainWrap .select_box select {
     width: 200px;
@@ -382,7 +387,7 @@
 .subVisual {
     width: 1260px;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .subVisual h2 {
@@ -398,7 +403,7 @@
 
 .subSlide .itm_box .inner {
     width: 380px;
-    height: 450px;
+    height: 470px;
 }
 
 .subSlide .itm_box .inner img {
@@ -410,7 +415,10 @@
 }
 
 .subSlide .itm_box .pul .model {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
     color: #000;
+    font-weight: 500;
     font-size: 24px;
     margin: 10px 0 40px 0;
 }
@@ -460,17 +468,22 @@
     background: #eeeded;
     border: 3px solid #eeeded;
     border-radius: 60px;
+    padding: 5px;
 }
 
 
 .subVisual .sub_num {
     text-align: right;
-    margin: 13px 95px 0 0;
+    margin: 18px 85px 0 0;
+}
+
+.subVisual .sub_num span {
+    color: #dd2e48;
 }
 
 .subSlide .slick-arrow {
     position: absolute;
-    bottom: -30px;
+    bottom: -40px;
     right: 100px;
 
     font-size: 0;
@@ -481,6 +494,8 @@
     height: 15px;
     border-top: 1px solid #333;
     border-left: 1px solid #333;
+
+    cursor: pointer;
 }
 
 .subSlide .slick-prev {
@@ -493,19 +508,140 @@
     margin: 0 -50px 0 0;
 }
 
-.subSlide .bar {
+.subVisual .bar {
     position: relative;
-    width: 700px;
-    height: 10px;
-    background: #fff;
-    border: #000;
+    top: 30px;
+    width: 1080px;
+    height: 5px;
+    background: #f9f9f9;
+
 }
 
-.subSlide .bar span {
+.subVisual .bar span {
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
-    background: tomato;
-    transition: width .5s;
+    background: #000;
+}
+
+.subTab .inner {
+    padding: 100px 0;
+    display: flex;
+    gap: 30px;
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.subTab .inner>div {
+    flex: 1;
+    overflow: hidden;
+}
+
+.subTab .inner .leftbox {
+    background: url(../img/bg.png) no-repeat center center/cover;
+}
+
+.subTab .rightbox {
+    border: 1px solid #eeeded;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.subTab .rightbox .tab_menu {
+    display: flex;
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+
+.subTab .tab_menu>li~li {
+    border-left: 1px solid #eeeded;
+    margin: 0 10px 0 0;
+}
+
+.subTab .tab_menu>li a {
+    display: block;
+    padding: 10px 20px 10px 0;
+    color: #999;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.subTab .tab_menu>li.on a {
+    color: #000;
+    font-size: 22px;
+}
+
+.subTab .tab_content>li {
+    display: none;
+    line-height: 36px;
+}
+
+.subTab .tab_content>li.on {
+    display: block;
+}
+
+.subTab .tab_content>li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.subTab .tab_content>li li {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+.footer {
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.footer .inner {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .inner .logo {
+    position: absolute;
+    right: 0;
+}
+
+.footer .inner .list {
+    display: flex;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.footer .inner .top li {
+    margin: 0 20px 0 0;
+}
+
+.footer .inner .bottom li {
+    margin: 0 20px 0 0;
+}
+
+.footer .list li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+    margin: 0 20px 0 0;
+    vertical-align: middle;
+}
+
+.footer .inner address {
+    font-size: 14px;
+    padding: 5px 0;
 }
