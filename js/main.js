@@ -32,26 +32,23 @@ $(function () {
         $('.mainVisual .main_num').text(c + 1 + "/" + s.slideCount);
     });
 
+
+
+
     $('.subSlide').slick({
         slidesToShow: 3,
+        arrows: true,
         dots: false,
-        arrows: false,
         autoplay: false,
-        autoplaySpeed: 3000,
         pauseOnHover: false,
         pauseOnFocus: false,
+        slidesToScroll: 3,
     });
 
 
     $('.subSlide').on('afterChange', function (e, s, c) {
-        $('.subVisual .sub_num').text(c + 1 + "/" + s.slideCount);
+        $('sub_num span').text(c ? (c + 1) : 1)
+        $('sub_num strong').text(s.slideCount)
     });
-
-    $('.popup button').on('click', function () {
-        $(this).parent().hide();
-    })
-
-
-    $('.popup').draggable();
 })
 

@@ -392,6 +392,10 @@
     padding: 0 0 50px 0
 }
 
+.subSlide {
+    position: relative;
+}
+
 .subSlide .itm_box .inner {
     width: 380px;
     height: 450px;
@@ -412,9 +416,22 @@
 }
 
 .subSlide .itm_box .pul .price {
+    display: flex;
+    gap: 15px;
+
+}
+
+.subSlide .itm_box .pul .disprice {
     font-size: 20px;
     font-weight: 600;
     margin: 0 0 20px 0;
+}
+
+.subSlide .itm_box .pul .oriprice {
+    font-size: 18px;
+    font-weight: 400;
+    color: #999ea1;
+    text-decoration: line-through;
 }
 
 .subSlide .itm_box .pul .des {
@@ -443,4 +460,52 @@
     background: #eeeded;
     border: 3px solid #eeeded;
     border-radius: 60px;
+}
+
+
+.subVisual .sub_num {
+    text-align: right;
+    margin: 13px 95px 0 0;
+}
+
+.subSlide .slick-arrow {
+    position: absolute;
+    bottom: -30px;
+    right: 100px;
+
+    font-size: 0;
+    border: none;
+    background: transparent;
+
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+}
+
+.subSlide .slick-prev {
+    transform: rotate(-45deg);
+    margin: 0 50px 0 0;
+}
+
+.subSlide .slick-next {
+    transform: rotate(135deg);
+    margin: 0 -50px 0 0;
+}
+
+.subSlide .bar {
+    position: relative;
+    width: 700px;
+    height: 10px;
+    background: #fff;
+    border: #000;
+}
+
+.subSlide .bar span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: tomato;
+    transition: width .5s;
 }
